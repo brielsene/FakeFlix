@@ -10,7 +10,8 @@ export default function Tela(){
             <Image source={ImgTopo} style={estilos.imgtopo}/>
         </View> 
         <View style={estilos.container}>
-            <Text>Login:</Text>
+            <Text style={estilos.login}>Login:</Text>
+            <Text style={estilos.senha}>Senha:</Text>
         </View>
         </>
     )
@@ -38,7 +39,22 @@ const estilos = StyleSheet.create({
 
     imgtopo:{
         width:"100%",
+    },
+
+    login:{
+        paddingRight:248,
+        fontSize:20,
+        color:"#FFFFFF",
+        paddingBottom:16
+    },
+
+    senha:{
+        paddingRight:248,
+        fontSize:20,
+        color:"#FFFFFF",
+        
     }
+
 
 
 
