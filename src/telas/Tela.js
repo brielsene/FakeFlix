@@ -14,14 +14,23 @@ export default function Tela(){
         
             
         
-        <View >
-            <TextInput style={estilos.textInput}></TextInput>
-        </View>
+        
+            
+        
         <View style={estilos.container}>
+        
             
-            <Text style={estilos.login}>Login:</Text>
+            <View style={estilos.viewInput}>
+                <Text style={estilos.login}>Login:</Text>
+                <TextInput style={estilos.textInput}></TextInput>
+                
+                
+            </View>
+            <View style={estilos.viewInput2}>
+                <Text style={estilos.senha}>Senha:</Text>
+                <TextInput style={estilos.textInput2}></TextInput>
+            </View>
             
-            <Text style={estilos.senha}>Senha:</Text>
            
             <Text style={estilos.texto3}>Ainda não tem conta?</Text>
             <Text style={estilos.texto4}>Cadastre-se</Text>
@@ -68,20 +77,10 @@ const estilos = StyleSheet.create({
         //height:24,       
         //paddingBottom:200
     },
-    login:{
-        paddingRight:248,       
-        fontSize:20,
-        color:"#FFFFFF",
-        paddingBottom:16,
-    },
+   
    
 
-    senha:{
-        paddingRight:248,
-        fontSize:20,
-        color:"#FFFFFF",
-        paddingBottom:35    
-    },
+    
 
     texto3:{
         fontSize:18,
@@ -96,15 +95,47 @@ const estilos = StyleSheet.create({
         fontFamily: "InterBold",   
     },
 
-    textInput:{
+    viewInput:{        
+        paddingLeft:54,
         width:"100%",
-        height:10,
-        borderWidth:1,
-        borderColor:"#000",
-        paddingBottom:6,
-        paddingTop:50,
-      
-    }
+        display:"flex",
+        flexDirection:"row",
+        paddingBottom:19,
+    },
+    login:{         
+        fontSize:20,
+        color:"#FFFFFF",
+        paddingBottom:10,
+        paddingRight:5,
+    },
+
+    textInput:{
+        width:"75%",
+        backgroundColor:"white",
+        paddingLeft:5,
+        
+        
+    },
+
+    senha:{
+       
+        fontSize:20,
+        color:"#FFFFFF",
+        paddingBottom:10,   
+    },
+    textInput2:{
+        
+        width:"75%",
+        backgroundColor:"white",
+        paddingLeft:5,
+    },
+    viewInput2:{        
+        paddingLeft:52,
+        width:"100%",
+        display:"flex",
+        flexDirection:"row",
+        
+    },
     
    
 
